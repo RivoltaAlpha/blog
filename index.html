@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Newsletter sign-up form</title>
+  </head>
+  <body id="mainContent">
+    <div class="content">
+      <h1>Stay updated!</h1>
+      <p>Join 60,000+ product managers receiving monthly updates on:</p>
+
+      <ul>
+        <li>
+          <img src="./assets/images/icon-list.svg" alt="" /><span
+            >Product discovery and building what matters</span
+          >
+        </li>
+        <li>
+          <img src="./assets/images/icon-list.svg" alt="" /><span
+            >Measuring to ensure updates are a success</span
+          >
+        </li>
+        <li>
+          <img src="./assets/images/icon-list.svg" alt="" />
+          <span>And much more!</span>
+        </li>
+      </ul>
+      <form id="subscriptionForm">
+        <p>Email address</p>
+        <input type="email" id="email" placeholder="email@company.com" />
+      </form>
+      <button id="subscribe">Subscribe to monthly newsletter</button>
+    </div>
+    <div class="img"></div>
+
+    <!-- The modal -->
+    <div id="thankyou-card" class="thankyou-card modal">
+      <div class="thankyou-class-modal">
+        <h1>Thanks for subscribing!</h1>
+        <p>
+          A confirmation email has been sent to
+          <span id="subscriber-email"></span>. Please open it and click the
+          button inside to confirm your subscription.
+        </p>
+        <button class="close">Dismiss message</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
